@@ -1,0 +1,19 @@
+package com.demo;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Demo {
+	public static void main(String[] args) {
+		ArrayList<Integer> a  = new ArrayList<Integer>();
+		a.add(1);
+		a.add("abc");
+		
+	}
+	public static void print(ArrayList<Integer> a) {
+		for(Integer i : a) {
+			System.out.println(i);
+		}
+	}
+}

@@ -1,0 +1,1983 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#"
+     xml:base="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:imprint="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#above -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#above">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#spatialProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Object"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#behind -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#behind">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#spatialProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsBackpack -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsBackpack">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsGeneric"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Space"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Backpack"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsBed -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsBed">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsFurnitureObject"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Space"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Furniture"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsChair -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsChair">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsFurnitureObject"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Space"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Furniture"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsConcreteObject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsConcreteObject">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsElectronicObject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsElectronicObject">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsFloor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsFloor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsConcreteObject"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Space"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Concrete"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Floor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsFurnitureObject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsFurnitureObject">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsGeneric -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsGeneric">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsKeyboard -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsKeyboard">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsElectronicObject"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Space"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Keyboard"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsObject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsObject"/>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsPillow -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsPillow">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsFurnitureObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsPlant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsPlant">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsGeneric"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsRefrigerator -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsRefrigerator">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsElectronicObject"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Space"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Refrigerator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsTVMonitor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsTVMonitor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsElectronicObject"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Space"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Electronic"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Object"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#TVMonitor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsTable -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsTable">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsFurnitureObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsWall -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsWall">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsConcreteObject"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Space"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Concrete"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Object"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Wall"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#contiansCGL -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#contiansCGL">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsObject"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Space"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#CGL"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#in">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#spatialProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Object"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#next_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#next_to">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#spatialProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Object"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#on -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#on">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#spatialProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Object"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#spatialProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#spatialProperty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#under -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#under">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#spatialProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Object"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasAngle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasAngle">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#MaxFreeSpaceDirection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasBackpackCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasBackpackCount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Backpack"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasBedCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasBedCount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Space"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasChairCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasChairCount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Space"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasCupboardCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasCupboardCount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Space"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasDistance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasDistance">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Object"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasKeyboardCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasKeyboardCount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Keyboard"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasPillowCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasPillowCount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Space"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasRefrigeratorCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasRefrigeratorCount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Refrigerator"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasTVCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasTVCount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Space"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasVIP -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasVIP">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Object"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasWallEndLoc -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasWallEndLoc">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Concrete"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Object"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Wall"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasWallEndLocDepth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasWallEndLocDepth">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Concrete"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Object"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Wall"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasWallMaxDepth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasWallMaxDepth">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Concrete"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Object"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Wall"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasWallMaxDepthLoc -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasWallMaxDepthLoc">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Concrete"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Object"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Wall"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasWallMinDepth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasWallMinDepth">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Concrete"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Object"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Wall"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasWallMinDepthLoc -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasWallMinDepthLoc">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Concrete"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Object"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Wall"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasWallStartLoc -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasWallStartLoc">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Concrete"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Object"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Wall"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasWallStartLocDepth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasWallStartLocDepth">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Concrete"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Object"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Wall"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Backpack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Backpack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Generic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Bed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Bed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Furniture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#BedRoom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#BedRoom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Room"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#CGL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#CGL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Chair -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Chair">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Furniture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Concrete -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Concrete">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#ConferenceRoom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#ConferenceRoom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Room"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Electronic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Electronic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Floor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Floor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Concrete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Furniture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Furniture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Generic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Generic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Keyboard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Keyboard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Electronic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Kitchen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Kitchen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Room"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Laboratory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Laboratory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Room"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#LivingRoom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#LivingRoom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Room"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#MaxFreeSpaceDirection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#MaxFreeSpaceDirection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Object -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Object">
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Concrete"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Electronic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Furniture"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Generic"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Pillow -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Pillow">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Furniture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Plant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Plant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Generic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Refrigerator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Refrigerator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Electronic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Room -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Room">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Space"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Space -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Space"/>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#TVMonitor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#TVMonitor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Electronic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Table -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Table">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Furniture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Wall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Wall">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Concrete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#classRoom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#classRoom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Room"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#bed1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#bed1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Bed"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Object"/>
+        <on rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#floor1"/>
+        <hasVIP rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">102</hasVIP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#chair1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#chair1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Chair"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Furniture"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Object"/>
+        <on rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#floor2"/>
+        <hasVIP rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">49</hasVIP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#chair2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#chair2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Chair"/>
+        <on rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#floor2"/>
+        <hasVIP rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</hasVIP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#floor1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#floor1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Concrete"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Floor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Object"/>
+        <on rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#bed1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#floor2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#floor2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Floor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#pillow1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#pillow1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Pillow"/>
+        <on rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#bed1"/>
+        <hasVIP rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">156</hasVIP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#pillow2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#pillow2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Pillow"/>
+        <on rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#bed1"/>
+        <hasVIP rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">171</hasVIP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#plant1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#plant1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Generic"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Plant"/>
+        <on rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#floor2"/>
+        <hasVIP rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">216</hasVIP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#space1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#space1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Space"/>
+        <containsBed rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#bed1"/>
+        <containsFloor rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#floor1"/>
+        <containsPillow rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#pillow1"/>
+        <containsPillow rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#pillow2"/>
+        <containsTable rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#table1"/>
+        <containsWall rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#wall1"/>
+        <hasBedCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasBedCount>
+        <hasChairCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasChairCount>
+        <hasPillowCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasPillowCount>
+        <hasTVCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasTVCount>
+        <hasWallEndLoc rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1919</hasWallEndLoc>
+        <hasWallEndLocDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">206</hasWallEndLocDepth>
+        <hasWallMaxDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">208</hasWallMaxDepth>
+        <hasWallMaxDepthLoc rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1504</hasWallMaxDepthLoc>
+        <hasWallMinDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">112</hasWallMinDepth>
+        <hasWallMinDepthLoc rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</hasWallMinDepthLoc>
+        <hasWallStartLoc rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasWallStartLoc>
+        <hasWallStartLocDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">117</hasWallStartLocDepth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#space2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#space2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Space"/>
+        <containsChair rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#chair1"/>
+        <containsChair rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#chair2"/>
+        <containsFloor rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#floor2"/>
+        <containsObject rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#plant1"/>
+        <containsPlant rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#plant1"/>
+        <containsWall rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#wall2"/>
+        <hasWallEndLoc rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1919</hasWallEndLoc>
+        <hasWallEndLocDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">114</hasWallEndLocDepth>
+        <hasWallMaxDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">206</hasWallMaxDepth>
+        <hasWallMaxDepthLoc rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">760</hasWallMaxDepthLoc>
+        <hasWallMinDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">113</hasWallMinDepth>
+        <hasWallMinDepthLoc rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1816</hasWallMinDepthLoc>
+        <hasWallStartLoc rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasWallStartLoc>
+        <hasWallStartLocDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">126</hasWallStartLocDepth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#table1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#table1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Furniture"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Table"/>
+        <next_to rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#bed1"/>
+        <on rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#floor1"/>
+        <hasVIP rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">172</hasVIP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#tvMonitor1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#tvMonitor1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Electronic"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Object"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#TVMonitor"/>
+        <hasVIP rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</hasVIP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#wall1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#wall1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Concrete"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Object"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Wall"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#wall2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#wall2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Wall"/>
+        <behind rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#chair2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Backpack"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Concrete"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Electronic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Furniture"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Plant"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Bed"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Chair"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Concrete"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Electronic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Generic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Pillow"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Table"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Concrete"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Furniture"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Generic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Keyboard"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Refrigerator"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#TVMonitor"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Electronic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Floor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Furniture"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Generic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Wall"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#above"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#next_to"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#on"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#under"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#bedroom">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#s">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#o">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#f">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#a">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#b">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#startLoc">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#endLoc">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#maxDepthLoc">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#minDepthLoc">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#startDepth">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#endDepth">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#maxDepth">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#minDepth">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#space">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#floor">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#object">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#vip">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#space1"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#space2"/>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fetch wall profiling depth values.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Query6</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Space"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasWallStartLocDepth"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#s"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#startDepth"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasWallEndLocDepth"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#s"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#endDepth"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasWallMaxDepth"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#s"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#maxDepth"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasWallMinDepth"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#s"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#minDepth"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#s"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                                <swrl:arguments rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#startDepth"/>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                                        <swrl:arguments rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#endDepth"/>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                                                <swrl:arguments rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#maxDepth"/>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                                                        <swrl:arguments rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#minDepth"/>
+                                                        </swrl:arguments>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Objects on floor in each space</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Query2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Space"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#space"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsFloor"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#space"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#floor"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#on"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#object"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#floor"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsObject"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#space"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#object"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#space"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                                <swrl:arguments rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#object"/>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#orderBy"/>
+                                        <swrl:arguments rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#space"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#object"/>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fetch number of objects present in each space</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Query1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Space"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#space"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsObject"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#space"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#object"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#space"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#count"/>
+                                <swrl:arguments rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#object"/>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#orderBy"/>
+                                        <swrl:arguments rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#space"/>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fetch objects present in each space.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Query3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Space"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#space"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsObject"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#space"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#object"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#space"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                                <swrl:arguments rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#object"/>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#orderBy"/>
+                                        <swrl:arguments rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#space"/>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nearest</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Query7</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Space"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#space1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsObject"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#space1"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#object"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasVIP"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#object"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#vip"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#space1"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                                <swrl:arguments rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#object"/>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#orderBy"/>
+                                        <swrl:arguments rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#vip"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#object"/>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#limit"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Farthest</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Query8</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Space"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#space2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsObject"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#space2"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#object"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasVIP"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#object"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#vip"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#space2"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                                <swrl:arguments rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#object"/>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#orderByDescending"/>
+                                        <swrl:arguments rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#vip"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#object"/>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#limit"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fetch instances of bedroom</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Query4</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#BedRoom"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#bedroom"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#bedroom"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fetch objects on floor</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Query9</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Space"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsObject"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#s"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#o"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#containsFloor"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#s"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#f"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#on"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#o"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#f"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#s"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                                <swrl:arguments rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#o"/>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Space having one bed and atleast one piillow is bedroom</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rule- Bedroom</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Space"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasBedCount"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#s"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#a"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#a"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasPillowCount"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#s"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#b"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                        <swrl:arguments>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#b"/>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </swrl:arguments>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#BedRoom"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fetch wallprofiling locations</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Query5</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#Space"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasWallStartLoc"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#s"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#startLoc"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasWallEndLoc"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#s"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#endLoc"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasWallMaxDepthLoc"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#s"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#maxDepthLoc"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#hasWallMinDepthLoc"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#s"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#minDepthLoc"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#s"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                                <swrl:arguments rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#startLoc"/>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                                        <swrl:arguments rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#endLoc"/>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                                                <swrl:arguments rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#maxDepthLoc"/>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                                                        <swrl:arguments rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#minDepthLoc"/>
+                                                        </swrl:arguments>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,20 @@
+package com.demo;
+
+import java.util.ArrayList;
+
+public class Demo {
+	public static void main(String[] args) {
+//		ArrayList<Integer> a  = new ArrayList<Integer>();
+//		a.add(1);
+		int adbs = 50;
+		System.out.println("Main called.");
+		StaticClass sc = new StaticClass();
+
+	}
+
+	public static void print(ArrayList<Integer> a) {
+		for (Integer i : a) {
+			System.out.println(i);
+		}
+	}
+}

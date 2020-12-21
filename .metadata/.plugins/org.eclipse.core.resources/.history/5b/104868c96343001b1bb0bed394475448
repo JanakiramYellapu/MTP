@@ -1,0 +1,9 @@
+package com.ontology;
+
+import org.apache.jena.rdf.model.Model;
+
+public interface IModel {
+	void writeStatements(Model model);
+	Model inference();
+	String query(int queryNumber, Model model);
+}

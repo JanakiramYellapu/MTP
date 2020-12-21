@@ -1,0 +1,8 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:imprint="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#">
+  <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#space1">
+    <imprint:containsBed rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#space1"/>
+    <imprint:containsBed rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#bed1"/>
+  </rdf:Description>
+</rdf:RDF>

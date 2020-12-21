@@ -1,0 +1,39 @@
+package com.ontology;
+
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.apache.jena.rdf.model.Model;
+
+
+public class App 
+{
+	static int queryNumber = 0;
+	static int numQueries = 0;
+	public static void main( String[] args )
+    {
+    	final String inputFileName  = "/home/janakiram/IITM/Project/Jena/SurOntology/src/Files/Ontologydemo.owl";
+    	final String namespace = "http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#";
+    	final String prefix = "PREFIX owl: <http://www.w3.org/2002/07/owl#>"
+    			+ "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
+    			+ "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>"
+    			+ "PREFIX imprint: <http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#>";
+  
+    	// Generating queries and saving them.
+    	QueryGenerator queryGenerator =  new QueryGenerator(prefix);
+    	List<String> queries = queryGenerator.getQueries();
+    	List<String> descriptions = queryGenerator.getDescriptions();
+    	queryGenerator.printQuery(queries);
+    	numQueries = queries.size();
+    	
+    	// Creating ontology model and querying.
+//    	SurvOnt ontology = new SurvOnt(inputFileName, inputFileName, namespace, queries);
+//    	Model infModel = ontology.inference();
+//    	String queryResult = ontology.query(queryNumber, infModel); 
+//    	System.out.println("The result of the queryNumber is : " + queryNumber  + ":" );
+//    	System.out.println(queryResult);
+    	
+
+    }
+}

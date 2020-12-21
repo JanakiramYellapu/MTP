@@ -1,0 +1,108 @@
+package com.ontology;
+
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import org.apache.jena.rdf.model.Model;
+
+
+public class App 
+{
+	static int queryNumber = 0;
+	static int numQueries = 0;
+	private static Scanner sc = new Scanner(System.in);
+	public static void main( String[] args )
+    {
+    	final String inputFileName  = "/home/janakiram/IITM/Project/Jena/SurOntology/src/Files/Ontologydemo.owl";
+    	final String namespace = "http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#";
+    	final String prefix = "PREFIX owl: <http://www.w3.org/2002/07/owl#>"
+    			+ "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
+    			+ "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>"
+    			+ "PREFIX imprint: <http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#>";
+ 
+    	// Generating queries and saving them.
+    	System.out.println("Query Generator Started.");
+    	System.out.println("*****************************************************************");
+    	QueryGenerator queryGenerator =  new QueryGenerator(prefix);
+    	List<String> queries = queryGenerator.getQueries();
+    	List<String> queryDescriptions = queryGenerator.getDescriptions();
+//    	queryGenerator.printQuery(queries);
+    	numQueries = queries.size();
+    	System.out.println();
+    	
+    	
+    	
+    	
+    	
+    	// Creating ontology model and querying.
+    	System.out.println("Model creation process started");
+    	System.out.println("*****************************************************************");
+    	System.out.println("Model is being created...");
+    	SurvOnt ontology = new SurvOnt(inputFileName, inputFileName, namespace, queries);
+    	System.out.println("Running Reasoner...");
+    	Model infModel = ontology.inference();
+    	System.out.println("Model is ready.");
+    	System.out.println();
+//    	String queryResult = ontology.query(queryNumber, infModel); 
+//    	System.out.println("*****************************************************************");
+//    	System.out.println("The result of " + "\"" +queryDescriptions.get(queryNumber) + "\"" + " is :");
+//    	System.out.println(queryResult);
+//    	System.out.println("*****************************************************************");
+    	
+    	
+    	
+    	boolean quit = false;
+    	int choice  = 0;
+    	System.out.println("Querying session has started : ");
+    	System.out.println("*****************************************************************");
+    	printMenu();
+    	while(!quit) {
+    		System.out.println();
+    		System.out.println("Enter choice(for menu please press 9) :");
+    		choice = sc.nextInt();
+    		System.out.println();
+    		switch(choice) {
+	    		case 0 : 
+	    			System.out.println("Querying session is closed.");
+	    			quit = true;
+	    			break;
+	    		case 1 : 
+	    			printQueries(queryDescriptions);
+	    			System.out.println("Pick one :");
+	    			queryNumber = sc.nextInt();
+	    			String queryResult = ontology.query(queryNumber-1, infModel); 
+	    	    	System.out.println("*****************************************************************");
+	    	    	System.out.println("The result of " + "\"" +queryDescriptions.get(queryNumber-1) + "\"" + " is :");
+	    	    	System.out.println(queryResult);
+	    	    	System.out.println("*****************************************************************");
+	    	    	break;
+	    		case 9 : 
+	    			printMenu();
+	    			break;
+    		}
+    	}
+    	
+    }
+	
+	public static void printQueries(List <String> queryDescriptions) {
+		System.out.println("AVAILABLE QUEREIS : ");
+		System.out.println("********************");
+		for(int i = 0; i < queryDescriptions.size(); i++) {
+			System.out.println((i+1) + ". " + queryDescriptions.get(i));
+		}
+		System.out.println();
+	}
+	
+	public static void printMenu() {
+		System.out.println("MENU : ");
+		System.out.println("********************");
+		System.out.println(0 + " : QUIT");
+		System.out.println(1 + " : QUERYING");
+		System.out.println(9 + " : MENU");
+		System.out.println();
+	}
+	
+	
+}

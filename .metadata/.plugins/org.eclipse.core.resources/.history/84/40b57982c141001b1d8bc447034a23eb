@@ -1,0 +1,40 @@
+package com.ontology;
+
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.apache.jena.rdf.model.Model;
+
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	final int queryNumber = 0;
+    	final String inputFileName  = "/home/janakiram/IITM/Project/Jena/SurOntology/src/Files/Ontologydemo.owl";
+    	final String prefix = "http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#";
+    	final String query1 = "PREFIX owl: <http://www.w3.org/2002/07/owl#>"
+    			+ "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
+    			+ "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>"
+    			+ "PREFIX imprint: <http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#>"
+    			+ "SELECT  ?x ?z  WHERE {"
+    			+ "?x imprint:containsFloor ?y ."
+    			+ "?x imprint:containsObject ?z ."
+    			+ "?y imprint:on ?z."
+//    			+ "	FILTER regex(str(?x), \".*space1.*\")"
+    			+ "}"
+    			+ "ORDER BY ?x ?z";
+    	
+    	List<String> queries =  new ArrayList<String>();
+    	queries.add(query1);
+    	
+    	SurvOnt ontology = new SurvOnt(inputFileName, inputFileName, prefix, queries);
+    	Model infModel = ontology.inference();
+    	String queryResult = ontology.query(queryNumber, infModel); 
+    	System.out.println("The result of the queryNumber is : " + queryNumber  + ":" );
+    	System.out.println(queryResult);
+    	
+
+    }
+}

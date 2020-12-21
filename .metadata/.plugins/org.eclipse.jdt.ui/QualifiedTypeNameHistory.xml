@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.apache.jena.riot.Lang"/>
+    <fullyQualifiedTypeName name="org.apache.jena.reasoner.ReasonerRegistry"/>
+    <fullyQualifiedTypeName name="org.apache.jena.reasoner.Reasoner"/>
+    <fullyQualifiedTypeName name="org.apache.jena.query.QueryFactory"/>
+    <fullyQualifiedTypeName name="org.apache.jena.query.Query"/>
+    <fullyQualifiedTypeName name="org.apache.jena.query.QueryExecutionFactory"/>
+    <fullyQualifiedTypeName name="org.apache.jena.query.QueryExecution"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="org.apache.jena.query.QuerySolution"/>
+    <fullyQualifiedTypeName name="org.apache.jena.query.ResultSet"/>
+    <fullyQualifiedTypeName name="org.apache.jena.rdf.model.Model"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="org.apache.jena.rdf.model.RDFNode"/>
+    <fullyQualifiedTypeName name="com.github.jsonldjava.core.RDFDataset.Literal"/>
+    <fullyQualifiedTypeName name="com.demo.StaticClass"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+</qualifiedTypeNameHistroy>

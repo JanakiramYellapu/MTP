@@ -1,0 +1,71 @@
+package com.ontology;
+
+import org.apache.jena.query.Query;
+import org.apache.jena.query.QueryExecution;
+import org.apache.jena.query.QueryExecutionFactory;
+import org.apache.jena.query.QueryFactory;
+import org.apache.jena.query.QuerySolution;
+import org.apache.jena.query.ResultSet;
+import org.apache.jena.rdf.model.InfModel;
+import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.ModelFactory;
+import org.apache.jena.rdf.model.Resource;
+import org.apache.jena.reasoner.Reasoner;
+import org.apache.jena.reasoner.ReasonerRegistry;
+import org.apache.jena.riot.RDFDataMgr;
+
+public class SurvOnt implements IModel{
+	Model schema, data;
+	
+	public  SurvOnt(String schemaFileName, String dataFileName) {
+		this.schema = RDFDataMgr.loadModel(schemaFileName);
+    	this.data   = RDFDataMgr.loadModel(dataFileName);
+	}
+
+	@Override
+	public void writeStatements() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Model inference() {
+		Reasoner reasoner = ReasonerRegistry.getOWLReasoner();
+		reasoner = reasoner.bindSchema(this.schema);
+    	InfModel infModel = ModelFactory.createInfModel(reasoner, this.data);
+		return infModel;
+	}
+
+	@Override
+	public String query(int queryNumber, Model model) {
+		String queryString = "PREFIX owl: <http://www.w3.org/2002/07/owl#>"
+    			+ "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
+    			+ "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>"
+    			+ "PREFIX imprint: <http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#>"
+    			+ "SELECT  ?x ?z  WHERE {"
+    			+ "?x imprint:containsFloor ?y ."
+    			+ "?x imprint:containsObject ?z ."
+    			+ "?y imprint:on ?z."
+//    			+ "	FILTER regex(str(?x), \".*space1.*\")"
+    			+ "}"
+    			+ "ORDER BY ?x ?z";
+    	
+    	System.out.println("Query"+ queryString);
+    	Query query = QueryFactory.create(queryString);
+    	QueryExecution qexec = QueryExecutionFactory.create(query, model);
+    	ResultSet results =  qexec.execSelect();
+    	try {
+			while(results.hasNext() ) {
+				QuerySolution soln =  results.nextSolution();
+				Resource spaceName = soln.getResource("x");
+				Resource objectName = soln.getResource("z");
+				System.out.println(spaceName + "      ---->      " + objectName);
+			}
+		} 
+    	finally {
+    		qexec.close();
+    	}
+		return null;
+	}
+	
+}

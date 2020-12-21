@@ -1,0 +1,19 @@
+package com.demo;
+
+import java.util.ArrayList;
+
+public class Demo {
+	public static void main(String[] args) {
+
+		
+		
+		 
+
+	}
+
+	public static void print(ArrayList<Integer> a) {
+		for (Integer i : a) {
+			System.out.println(i);
+		}
+	}
+}

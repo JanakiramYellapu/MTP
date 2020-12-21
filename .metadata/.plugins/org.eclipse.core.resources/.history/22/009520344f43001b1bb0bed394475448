@@ -1,0 +1,84 @@
+package com.ontology;
+
+import java.util.List;
+
+import org.apache.jena.query.Query;
+import org.apache.jena.query.QueryExecution;
+import org.apache.jena.query.QueryExecutionFactory;
+import org.apache.jena.query.QueryFactory;
+import org.apache.jena.query.QuerySolution;
+import org.apache.jena.query.ResultSet;
+import org.apache.jena.rdf.model.InfModel;
+import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.ModelFactory;
+import org.apache.jena.rdf.model.Property;
+import org.apache.jena.rdf.model.RDFNode;
+import org.apache.jena.rdf.model.ResIterator;
+import org.apache.jena.rdf.model.Resource;
+import org.apache.jena.reasoner.Reasoner;
+import org.apache.jena.reasoner.ReasonerRegistry;
+import org.apache.jena.riot.RDFDataMgr;
+
+import com.github.jsonldjava.core.RDFDataset.Literal;
+
+public class SurvOnt implements IModel{
+	private Model schema, data;
+	private List<String> queries;
+	private String namespace;
+	public  SurvOnt(String schemaFileName, String dataFileName, String namespace, List<String> queries) {
+		this.schema = RDFDataMgr.loadModel(schemaFileName);
+    	this.data   = RDFDataMgr.loadModel(dataFileName);
+    	this.queries = queries;
+    	this.namespace = namespace;
+	}
+
+	@Override
+	public void writeStatements(Model model) {
+		// TODO Auto-generated method stub
+		System.out.println("Implementation in progress...");
+		Property containsObject = model.getProperty("imprint:containsObject");
+		Resource space = model.getResource("imprint:space");
+		Resource bed10 = model.createResource(this.namespace + "bed10");
+//		System.out.println(bed);
+		space.addProperty(containsObject, bed10);
+		ResIterator iter = model.listSubjectsWithProperty(containsObject);
+		while (iter.hasNext()) {
+		    Resource r = iter.nextResource();
+		    System.out.println(r);
+		}
+//		model.write(System.out);
+		
+	}
+
+	@Override
+	public Model inference() {
+		Reasoner reasoner = ReasonerRegistry.getOWLReasoner();
+		reasoner = reasoner.bindSchema(this.schema);
+    	InfModel infModel = ModelFactory.createInfModel(reasoner, this.data);
+		return infModel;
+	}
+
+	@Override
+	public String query(int queryNumber, Model model) {
+		
+		String queryString = this.queries.get(queryNumber);
+    	Query query = QueryFactory.create(queryString);
+    	QueryExecution qexec = QueryExecutionFactory.create(query, model);
+    	ResultSet results =  qexec.execSelect();
+    	String result = "";
+    	try {
+			while(results.hasNext() ) {
+				QuerySolution soln =  results.nextSolution();
+				RDFNode spaceName = soln.get("space");
+				RDFNode objectName = soln.get("object");
+				result += spaceName + " -----> " + objectName + "\n" ;
+//				result += soln.toString() + "\n";
+			}
+		} 
+    	finally {
+    		qexec.close();
+    	}
+		return result;
+	}
+	
+}

@@ -1,0 +1,13 @@
+package com.demo;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Demo {
+	public static void main(String[] args) {
+		Car c = new Maruthi(4);
+		c.engine();
+		
+	}
+	
+}

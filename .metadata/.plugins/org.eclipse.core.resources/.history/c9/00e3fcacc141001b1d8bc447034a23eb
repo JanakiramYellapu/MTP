@@ -1,0 +1,31 @@
+package com.ontology;
+
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.apache.jena.rdf.model.Model;
+
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	final int queryNumber = 0;
+    	final String inputFileName  = "/home/janakiram/IITM/Project/Jena/SurOntology/src/Files/Ontologydemo.owl";
+    	final String prefix = "http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#";
+    	
+    	QueryGenerator queryGenerator =  new QueryGenerator(prefix);
+    	List<String> queries = queryGenerator.getQueries();
+    	List<String> descriptions = queryGenerator.getDescriptions();
+    	queries.add(query1);
+    	
+    	SurvOnt ontology = new SurvOnt(inputFileName, inputFileName, prefix, queries);
+    	Model infModel = ontology.inference();
+    	String queryResult = ontology.query(queryNumber, infModel); 
+    	System.out.println("The result of the queryNumber is : " + queryNumber  + ":" );
+    	System.out.println(queryResult);
+    	
+
+    }
+}

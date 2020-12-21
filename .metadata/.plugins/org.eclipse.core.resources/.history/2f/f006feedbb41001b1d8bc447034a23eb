@@ -1,0 +1,35 @@
+package com.ontology;
+
+import org.apache.jena.rdf.model.Model;
+import org.apache.jena.reasoner.Reasoner;
+import org.apache.jena.reasoner.ReasonerRegistry;
+import org.apache.jena.riot.RDFDataMgr;
+
+public class SurvOnt implements IModel{
+	Model schema, data;
+	
+	public  SurvOnt(String schemaFileName, String dataFileName) {
+		this.schema = RDFDataMgr.loadModel(schemaFileName);
+    	this.data   = RDFDataMgr.loadModel(dataFileName);
+	}
+
+	@Override
+	public void writeStatements() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Model inference() {
+		Reasoner reasoner = ReasonerRegistry.getOWLReasoner();
+		
+		return null;
+	}
+
+	@Override
+	public String query() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}
