@@ -15,9 +15,7 @@ public class App
 	public static void main( String[] args )
     {
     	final String schemaFileName  = "/home/janakiram/IITM/Project/Jena/ontology/Files/Ontologydemo.owl";
-    	final String dataFileName  = "/home/janakiram/IITM/Project/Jena/ontology/Files/Ontologydemo.owl";
-//    	final String schemaFileName  = "/home/janakiram/IITM/Project/Jena/ontology/Files/duplicate/Ontologydemo.owl";
-//    	final String dataFileName  = "/home/janakiram/IITM/Project/Jena/ontology/Files/duplicate/Ontologydemo.owl";
+    	final String dataFileName  = "/home/janakiram/IITM/Project/Jena/ontology/Files/data.rdf";
     	final String namespace = "http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#";
     	final String prefix = "PREFIX owl: <http://www.w3.org/2002/07/owl#>"
     			+ "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
@@ -44,9 +42,13 @@ public class App
     	
     	System.out.println("Model is being created...");
     	SurvOnt ontology = new SurvOnt(schemaFileName, dataFileName, namespace, queries);
+    	
+    	//loading schema.
+    	System.out.println("Loading schema...");
+    	ontology.loadSchema();
 
     	// writing statements to the model.
-    	System.out.println("Reading data...");
+    	System.out.println("creating data model...");
     	ontology.createDataModel();
     	
     	
@@ -77,7 +79,7 @@ public class App
 	    			printQueries(queryDescriptions);
 	    			System.out.println("Pick one : \r");
 	    			queryNumber = sc.nextInt();
-	    			String queryResult = ontology.query(queryNumber-1, infModel); 
+	    			String queryResult = ontology.query(queryNumber-1, queryGenerator, infModel); 
 	    			printStars();
 	    	    	System.out.println("The result of " + "\"" +queryDescriptions.get(queryNumber-1) + "\"" + " is :");
 	    	    	System.out.println(queryResult);

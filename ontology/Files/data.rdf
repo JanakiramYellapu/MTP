@@ -2,7 +2,50 @@
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:imprint="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#">
   <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#space1">
-    <imprint:containsBed rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#space1"/>
-    <imprint:containsBed rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#bed1"/>
+    <imprint:containsFloor rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#floor1"/>
+    <imprint:containsPillow>
+      <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#pillow2">
+        <imprint:hasDistance rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#171"/>
+      </rdf:Description>
+    </imprint:containsPillow>
+    <imprint:containsPillow>
+      <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#pillow1">
+        <imprint:hasDistance rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#156"/>
+      </rdf:Description>
+    </imprint:containsPillow>
+    <imprint:containsTable>
+      <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#table1">
+        <imprint:hasDistance rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#172"/>
+        <imprint:on rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#floor1"/>
+      </rdf:Description>
+    </imprint:containsTable>
+    <imprint:containsBed>
+      <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#bed1">
+        <imprint:hasDistance rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#102"/>
+        <imprint:on rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#floor1"/>
+      </rdf:Description>
+    </imprint:containsBed>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#space2">
+    <imprint:containsWall rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#wall2"/>
+    <imprint:containsFloor rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#floor2"/>
+    <imprint:containsChair>
+      <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#chair2">
+        <imprint:hasDistance rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#100"/>
+        <imprint:on rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#floor2"/>
+      </rdf:Description>
+    </imprint:containsChair>
+    <imprint:containsChair>
+      <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#chair1">
+        <imprint:hasDistance rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#49"/>
+        <imprint:on rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#floor2"/>
+      </rdf:Description>
+    </imprint:containsChair>
+    <imprint:containsPlant>
+      <rdf:Description rdf:about="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#plant1">
+        <imprint:hasDistance rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#216"/>
+        <imprint:on rdf:resource="http://www.semanticweb.org/janakiram/ontologies/2020/9/ontologyDemo#floor2"/>
+      </rdf:Description>
+    </imprint:containsPlant>
   </rdf:Description>
 </rdf:RDF>

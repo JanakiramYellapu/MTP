@@ -16,14 +16,14 @@ public class QueryGenerator {
 	final String query2 =  "SELECT  ?space ?object  WHERE {"
 			+ "?space imprint:containsFloor ?floor ."
 			+ "?space imprint:containsObject ?object ."
-			+ "?floor imprint:on ?object."
+			+ "?object imprint:on ?floor."
 			+ "}"
 			+ "ORDER BY ?space ?object";
 	
 	//Nearest object in space1.
 	final String query3 =  "SELECT ?depth ?object  WHERE {"
 			+ "imprint:space1 imprint:containsObject ?object ."
-			+ "?object imprint:hasVIP ?depth."
+			+ "?object imprint:hasDistance ?depth."
 			+ "}"
 			+ "ORDER BY ?depth";
 //			+ "LIMIT 1";
@@ -31,7 +31,7 @@ public class QueryGenerator {
 	//Farthest object in space2.
 	final String query4 =  "SELECT ?object ?depth WHERE {"
 			+ "imprint:space2 imprint:containsObject ?object ."
-			+ "?object imprint:hasVIP ?depth."
+			+ "?object imprint:hasDistance ?depth."
 			+ "}"
 			+ "ORDER BY DESC(?depth)";
 

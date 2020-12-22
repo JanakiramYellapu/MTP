@@ -1654,3 +1654,140 @@
 2020-12-21 13:52:20,340 [Worker-97: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/main/resources
 2020-12-21 13:52:20,342 [Worker-97: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2020-12-21 13:52:20,342 [Worker-97: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/test/resources
+2020-12-22 10:51:49,550 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2020-12-22 10:52:00,540 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 10:52:00,541 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/main/resources
+2020-12-22 10:52:00,546 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 10:52:00,547 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/test/resources
+2020-12-22 10:54:50,027 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 10:54:50,028 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/main/resources
+2020-12-22 10:54:50,031 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 10:54:50,031 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/test/resources
+2020-12-22 11:08:20,706 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 11:08:20,751 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/main/resources
+2020-12-22 11:08:20,757 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 11:08:20,772 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/test/resources
+2020-12-22 11:10:43,649 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 11:10:43,649 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/main/resources
+2020-12-22 11:10:43,652 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 11:10:43,652 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/test/resources
+2020-12-22 11:10:49,208 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 11:10:49,208 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/main/resources
+2020-12-22 11:10:49,212 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 11:10:49,212 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/test/resources
+2020-12-22 11:14:23,079 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 11:14:23,102 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/main/resources
+2020-12-22 11:14:23,105 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 11:14:23,105 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/test/resources
+2020-12-22 11:26:40,170 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 11:26:40,220 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/main/resources
+2020-12-22 11:26:40,223 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 11:26:40,224 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/test/resources
+2020-12-22 11:29:53,347 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 11:29:53,348 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/main/resources
+2020-12-22 11:29:53,351 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 11:29:53,352 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/test/resources
+2020-12-22 11:31:17,505 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 11:31:17,505 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/main/resources
+2020-12-22 11:31:17,507 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 11:31:17,507 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/test/resources
+2020-12-22 11:38:40,209 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 11:38:40,262 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/main/resources
+2020-12-22 11:38:40,266 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 11:38:40,266 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/test/resources
+2020-12-22 11:43:49,143 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 11:43:49,165 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/main/resources
+2020-12-22 11:43:49,168 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 11:43:49,168 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/test/resources
+2020-12-22 11:45:59,759 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 11:45:59,759 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/main/resources
+2020-12-22 11:45:59,761 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 11:45:59,761 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/test/resources
+2020-12-22 11:52:16,638 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 11:52:16,672 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/main/resources
+2020-12-22 11:52:16,676 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 11:52:16,676 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/test/resources
+2020-12-22 11:55:04,933 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 11:55:04,933 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/main/resources
+2020-12-22 11:55:04,936 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 11:55:04,936 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/test/resources
+2020-12-22 11:56:23,563 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 11:56:23,564 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/main/resources
+2020-12-22 11:56:23,566 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 11:56:23,566 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/test/resources
+2020-12-22 11:56:47,507 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 11:56:47,507 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/main/resources
+2020-12-22 11:56:47,614 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 11:56:47,615 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/test/resources
+2020-12-22 12:00:05,585 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 12:00:05,611 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/main/resources
+2020-12-22 12:00:05,614 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 12:00:05,614 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/test/resources
+2020-12-22 12:00:44,656 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 12:00:44,657 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/main/resources
+2020-12-22 12:00:44,658 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 12:00:44,658 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/test/resources
+2020-12-22 12:01:16,866 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 12:01:16,866 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/main/resources
+2020-12-22 12:01:16,868 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 12:01:16,868 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/test/resources
+2020-12-22 12:03:50,423 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 12:03:50,443 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/main/resources
+2020-12-22 12:03:50,445 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 12:03:50,445 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/test/resources
+2020-12-22 12:07:20,961 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 12:07:20,961 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/main/resources
+2020-12-22 12:07:20,963 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 12:07:20,964 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/test/resources
+2020-12-22 12:16:30,181 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 12:16:30,283 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/main/resources
+2020-12-22 12:16:30,285 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 12:16:30,304 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/test/resources
+2020-12-22 12:26:25,359 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 12:26:25,415 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/main/resources
+2020-12-22 12:26:25,419 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 12:26:25,436 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/test/resources
+2020-12-22 12:28:42,929 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 12:28:42,929 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/main/resources
+2020-12-22 12:28:42,931 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 12:28:42,931 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/test/resources
+2020-12-22 12:39:56,425 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 12:39:56,481 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/main/resources
+2020-12-22 12:39:56,485 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 12:39:56,502 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/test/resources
+2020-12-22 12:42:59,861 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 12:42:59,861 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/main/resources
+2020-12-22 12:42:59,862 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 12:42:59,862 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/test/resources
+2020-12-22 12:43:34,303 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 12:43:34,303 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/main/resources
+2020-12-22 12:43:34,305 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 12:43:34,319 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/test/resources
+2020-12-22 12:44:05,219 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 12:44:05,219 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/main/resources
+2020-12-22 12:44:05,221 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 12:44:05,221 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/test/resources
+2020-12-22 12:49:09,986 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 12:49:10,019 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/main/resources
+2020-12-22 12:49:10,023 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 12:49:10,107 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/test/resources
+2020-12-22 12:49:12,825 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 12:49:12,826 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/main/resources
+2020-12-22 12:49:12,827 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 12:49:12,827 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/test/resources
+2020-12-22 12:49:52,589 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 12:49:52,589 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/main/resources
+2020-12-22 12:49:52,591 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 12:49:52,591 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/test/resources
+2020-12-22 12:50:42,414 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 12:50:42,415 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/main/resources
+2020-12-22 12:50:42,417 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 12:50:42,418 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/test/resources
+2020-12-22 12:53:04,903 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 12:53:04,903 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/main/resources
+2020-12-22 12:53:04,905 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 12:53:04,905 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/test/resources
+2020-12-22 12:53:28,763 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 12:53:28,763 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/main/resources
+2020-12-22 12:53:28,765 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-22 12:53:28,765 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/janakiram/IITM/Project/Jena/ontology/src/test/resources
