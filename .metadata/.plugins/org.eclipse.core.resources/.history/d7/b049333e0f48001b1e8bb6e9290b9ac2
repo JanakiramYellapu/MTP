@@ -84,49 +84,48 @@ public class SurvOnt implements IModel{
 	private ArrayList<ArrayList<String>> addStatements(){
 		ArrayList<ArrayList<String>> statements = new ArrayList<ArrayList<String>>();
 		// space 1
-//		statements.add(new ArrayList<String>(Arrays.asList("space1", "containsBed", "bed1")));
-//		statements.add(new ArrayList<String>(Arrays.asList("space1", "containsTable", "table1")));
-//		statements.add(new ArrayList<String>(Arrays.asList("space1", "containsPillow", "pillow1")));
-//		statements.add(new ArrayList<String>(Arrays.asList("space1", "containsPillow", "pillow2")));
-//		statements.add(new ArrayList<String>(Arrays.asList("space1", "containsFloor", "floor1")));
-//		statements.add(new ArrayList<String>(Arrays.asList("bed1", "on", "floor1")));
-//		statements.add(new ArrayList<String>(Arrays.asList("table1", "on", "floor1")));
-//		statements.add(new ArrayList<String>(Arrays.asList("bed1", "hasDistance", "102")));
-//		statements.add(new ArrayList<String>(Arrays.asList("table1", "hasDistance", "172")));
-//		statements.add(new ArrayList<String>(Arrays.asList("pillow1", "hasDistance", "156")));
-//		statements.add(new ArrayList<String>(Arrays.asList("pillow2", "hasDistance", "171")));
+		statements.add(new ArrayList<String>(Arrays.asList("space1", "containsBed", "bed1")));
+		statements.add(new ArrayList<String>(Arrays.asList("space1", "containsTable", "table1")));
+		statements.add(new ArrayList<String>(Arrays.asList("space1", "containsPillow", "pillow1")));
+		statements.add(new ArrayList<String>(Arrays.asList("space1", "containsPillow", "pillow2")));
+		statements.add(new ArrayList<String>(Arrays.asList("space1", "containsFloor", "floor1")));
+		statements.add(new ArrayList<String>(Arrays.asList("bed1", "on", "floor1")));
+		statements.add(new ArrayList<String>(Arrays.asList("table1", "on", "floor1")));
+		statements.add(new ArrayList<String>(Arrays.asList("bed1", "hasDistance", "102")));
+		statements.add(new ArrayList<String>(Arrays.asList("table1", "hasDistance", "172")));
+		statements.add(new ArrayList<String>(Arrays.asList("pillow1", "hasDistance", "156")));
+		statements.add(new ArrayList<String>(Arrays.asList("pillow2", "hasDistance", "171")));
 		
 		//space 2
-//		statements.add(new ArrayList<String>(Arrays.asList("space2", "containsPlant", "plant1")));
-//		statements.add(new ArrayList<String>(Arrays.asList("space2", "containsChair", "chair1")));
-//		statements.add(new ArrayList<String>(Arrays.asList("space2", "containsChair", "chair2")));
-//		statements.add(new ArrayList<String>(Arrays.asList("space2", "containsFloor", "floor2")));
-//		statements.add(new ArrayList<String>(Arrays.asList("space2", "containsWall", "wall2")));
-//		statements.add(new ArrayList<String>(Arrays.asList("plant1", "on", "floor2")));
-//		statements.add(new ArrayList<String>(Arrays.asList("chair1", "on", "floor2")));
-//		statements.add(new ArrayList<String>(Arrays.asList("chair2", "on", "floor2")));
-//		statements.add(new ArrayList<String>(Arrays.asList("chair1", "hasDistance", "49")));
-//		statements.add(new ArrayList<String>(Arrays.asList("chair2", "hasDistance", "100")));
-//		statements.add(new ArrayList<String>(Arrays.asList("plant1", "hasDistance", "216")));
-//		try (BufferedWriter writer = new BufferedWriter(new FileWriter("/home/janakiram/IITM/Project/Jena/ontology/Files/data.txt"))){
-//			for(ArrayList<String> statement : statements) {
-//				String subject = statement.get(0);
-//				String predicate = statement.get(1);
-//				String object = statement.get(2);
-//				writer.write(subject + "," + predicate + "," + object + "\n");
-//			}
-//			
-//		}
-//		catch(IOException e){
-//			System.out.println("Unable to write to data.txt file.");
-//		}
+		statements.add(new ArrayList<String>(Arrays.asList("space2", "containsPlant", "plant1")));
+		statements.add(new ArrayList<String>(Arrays.asList("space2", "containsChair", "chair1")));
+		statements.add(new ArrayList<String>(Arrays.asList("space2", "containsChair", "chair2")));
+		statements.add(new ArrayList<String>(Arrays.asList("space2", "containsFloor", "floor2")));
+		statements.add(new ArrayList<String>(Arrays.asList("space2", "containsWall", "wall2")));
+		statements.add(new ArrayList<String>(Arrays.asList("plant1", "on", "floor2")));
+		statements.add(new ArrayList<String>(Arrays.asList("chair1", "on", "floor2")));
+		statements.add(new ArrayList<String>(Arrays.asList("chair2", "on", "floor2")));
+		statements.add(new ArrayList<String>(Arrays.asList("chair1", "hasDistance", "49")));
+		statements.add(new ArrayList<String>(Arrays.asList("chair2", "hasDistance", "100")));
+		statements.add(new ArrayList<String>(Arrays.asList("plant1", "hasDistance", "216")));
+		try (BufferedWriter writer = new BufferedWriter(new FileWriter("/home/janakiram/IITM/Project/Jena/ontology/Files/data.txt"))){
+			for(ArrayList<String> statement : statements) {
+				String subject = statement.get(0);
+				String predicate = statement.get(1);
+				String object = statement.get(2);
+				writer.write(subject + "," + predicate + "," + object + "\n");
+			}
+			
+		}
+		catch(IOException e){
+			System.out.println("Unable to write to data.txt file.");
+		}
 		System.out.println("Reading from file");
 		try(BufferedReader reader  = new BufferedReader(new FileReader("/home/janakiram/IITM/Project/Jena/ontology/Files/data.txt"))){
 			String input;
 			while((input = reader.readLine()) != null) {
 				String[] data = input.split(",");
 				System.out.println(data[0] + "--->" + data[1] + "-->" + data[2]);
-				statements.add(new ArrayList<String> (Arrays.asList(data[0], data[1], data[2])));
 			}
 		}
 		catch(IOException e) {
